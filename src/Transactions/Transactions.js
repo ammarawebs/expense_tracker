@@ -11,7 +11,7 @@ const Transactions = (props) => {
                 <h1 className="transaction_heading">
                   Transaction Details
                 </h1>
-                <p>please add negative values for expenses</p>
+                
               </div>
               <div className="t_d_inputs">
               <Transaction_input
