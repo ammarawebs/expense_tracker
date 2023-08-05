@@ -153,8 +153,8 @@ function App() {
               balance={Math.abs(balance)}
             />
             <Income_expense
-              income={income}
-              expense={expense}
+              income={Math.abs(income)}
+              expense={Math.abs(expense)}
             />
             <History
               transaction_array={t_details_array}
