@@ -159,7 +159,7 @@ function App() {
           
             <App_name/>
             <Balance
-              balance={Math.abs(balance)}
+              balance={balance}
             />
             <Income_expense
               income={Math.abs(income)}
