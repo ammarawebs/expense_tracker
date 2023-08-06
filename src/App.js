@@ -84,7 +84,8 @@ function App() {
     const value = event.target.value
 
 
-    setT_details({...t_details, [name] : value })
+
+      setT_details({...t_details, [name] : value })
 
     
   }
@@ -93,9 +94,13 @@ function App() {
   const Add_transaction = () =>{
 
 
+    
+
     const t_record = {...t_details , id: new Date().getTime().toString()}
 
-    setT_details_array([...t_details_array , t_record])
+    if(t_record.name !== '' && t_record.amount !== ''){
+
+      setT_details_array([...t_details_array , t_record])
 
     set_balance(balance + Number(t_details.amount))
 
@@ -109,6 +114,10 @@ function App() {
     
 
     setT_details({name: '' , amount:''})
+    
+
+    }
+
     
   
   }
